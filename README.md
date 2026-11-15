@@ -58,6 +58,17 @@ Welcome to **Bharath's DevSpace**! This is a showcase project demonstrating mode
 
 ## Quick Start
 
+### Local Docker Compose
+
+Copy `.env.example` to `.env` and replace its placeholder with a unique, strong password before
+starting the application. Compose reads `.env` automatically, and `.env` is excluded from Git.
+Keep this setup local for learning; do not expose MySQL port 3306 to the internet.
+
+```bash
+cp .env.example .env
+docker compose up --build
+```
+
 ### 1️⃣ Server Setup 
 1. Launch a EC2 Instance
    - ![server-creation](./images/server-creation.png)
