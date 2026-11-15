@@ -10,6 +10,10 @@ app.config['MYSQL_DB'] = os.environ.get('MYSQL_DB', 'default_db')
 
 mysql = MySQL(app)
 
+@app.route('/health')
+def health():
+    return jsonify({'status': 'ok'})
+
 def init_db():
     with app.app_context():
         cur = mysql.connection.cursor()
