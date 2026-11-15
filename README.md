@@ -1,6 +1,6 @@
-# 🚀 Bharath's DevSpace - 2-Tier Flask Web Application
+# 🚀 Zain Ul Abideen's DevSpace - 2-Tier Flask Web Application
 
-> A modern, containerized Flask web application with MySQL database, featuring automated CI/CD deployment on AWS EC2.
+> A containerized Flask web application with a MySQL database and a Jenkins CI pipeline.
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
 [![Docker](https://img.shields.io/badge/Docker-Ready-blue.svg)](https://docker.com)
@@ -19,7 +19,7 @@
 
 ## About This Project
 
-Welcome to **Bharath's DevSpace**! This is a showcase project demonstrating modern DevOps practices through a beautiful, responsive 2-tier web application. The app features a sleek glassmorphism design with animated backgrounds and serves as both a personal portfolio and a messaging platform.
+Welcome to **Zain Ul Abideen's DevSpace**! This is a showcase project demonstrating modern DevOps practices through a responsive 2-tier web application. It uses Flask for the web app, MySQL for persistent messages, Docker Compose to run both services locally, and Jenkins for CI.
 
 ### ✨ What Makes This Special?
 
@@ -232,11 +232,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact & Support
 
-**Bharath Aaleti**
-- 💼 DevOps Engineer
-- 🌐 LinkedIn: [Connect with me](https://linkedin.com/in/bharathaaleti)
-- 📧 Email: aaletibharath@gmail.com
-- 🐙 GitHub: [@bHARATHaALETI018](https://github.com/bHARATHaALETI018/)
+For questions or support, open an issue or pull request in this repository.
 
 ---
 
@@ -244,6 +240,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **⭐ If you found this project helpful, please give it a star! ⭐**
 
-*Built with ❤️ by Bharath Aaleti*
+*Built by Zain Ul Abideen*
 
 </div>
