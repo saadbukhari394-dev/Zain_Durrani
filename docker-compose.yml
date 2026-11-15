@@ -3,8 +3,8 @@ services:
     container_name: mysql
     image: mysql:9
     environment:
-      - MYSQL_DATABASE=devops
-      - MYSQL_ROOT_PASSWORD=root
+      MYSQL_DATABASE: devops
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:?Set MYSQL_ROOT_PASSWORD in .env}
     ports:
       - 3306:3306
     volumes:
@@ -13,7 +13,7 @@ services:
       - two_tier_network
     restart: always
     healthcheck:
-      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-proot"]
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
       interval: 10s
       timeout: 5s
       retries: 5
@@ -25,10 +25,10 @@ services:
       - 5000:5000
     restart: always
     environment:
-      - MYSQL_HOST=mysql
-      - MYSQL_USER=root
-      - MYSQL_PASSWORD=root
-      - MYSQL_DB=devops
+      MYSQL_HOST: mysql
+      MYSQL_USER: root
+      MYSQL_PASSWORD: ${MYSQL_ROOT_PASSWORD:?Set MYSQL_ROOT_PASSWORD in .env}
+      MYSQL_DB: devops
     networks:
       - two_tier_network
     depends_on: 
